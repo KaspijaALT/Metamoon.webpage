@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Website | Vanilla JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+       <a hfref="#" class ="logo">MM Team®</a>
+       <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+       </ul>
+    </header>
+    <section>
+       <img src="stars.png" id="stars">
+       <img src="moon.png" id="moon">
+       <img src="mountains_behind.png" id="mountains_behind">
+       <h2 id="text">Metamoon</h2>
+       <a href="#sec" id="btn">Explore</a>
+       <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Bitcoin's Cryptic Competitor</h2>
+        <p>Metamoon is a groundbreaking new cryptocurrency that has quickly captured the attention of the cryptocurrency community. Built on cutting-edge blockchain technology, it promises to bring innovation and transformation to the world of digital currencies.<br><br>At its core, Metamoon offers rapid and efficient transaction processing, ensuring that users can transfer funds quickly and at a low cost. One of its standout features is its commitment to user privacy. Metamoon transactions can be conducted anonymously, safeguarding the identities of those involved and protecting sensitive data.<br><br>To address the issue of price volatility, Metamoon introduces a unique decay mechanism. This mechanism is designed to stabilize the value of the cryptocurrency and reduce price fluctuations, providing users with a more reliable store of value.<br><br>Metamoon is also community-driven, allowing its users to actively participate in its development and governance. The cryptocurrency features liquidity pools, enabling users to stake their tokens and earn rewards, contributing to the overall liquidity and sustainability of the ecosystem.<br><br>Security is a paramount concern for Metamoon, and it employs advanced encryption techniques and consensus mechanisms to ensure the safety of user assets and the integrity of its network.<br><br>Furthermore, Metamoon embraces smart contract technology, enabling the creation of decentralized applications (DApps) and automated agreements without the need for intermediaries. It aims to be cross-chain compatible, enhancing its interoperability with other blockchain networks.<br><br>In summary, Metamoon represents a promising addition to the cryptocurrency landscape, offering speed, privacy, stability, and community engagement as its key pillars. Its innovative approach and commitment to improving the user experience make it a cryptocurrency to watch in the evolving digital currency space.<br><br>
+        </p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.left = value * 0.5 + 'px';
+            mountains_front.left = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 * 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
