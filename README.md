@@ -18,7 +18,7 @@ Metamoon is a cutting-edge cryptocurrency designed to address the limitations of
 
 To explore our website or contribute to its development, follow these simple steps:
 
-1. Clone this repository: `git clone https://github.com/yourusername/Metamoon-Webpage.git`
+1. Clone this repository: `git clone https://github.com/KaspijaALT/Metamoon-Webpage.git`
 
 2. Open `index.html` in your web browser to view the Metamoon webpage.
 
