@@ -38,4 +38,3 @@ If you have questions, feedback, or would like to get in touch with us, you can 
 
 Thank you for your interest in Metamoon!
 
-[![Metamoon Logo](metamoon-logo.png)](https://metamoon.io)
